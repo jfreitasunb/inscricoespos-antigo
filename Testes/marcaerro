@@ -1,0 +1,20 @@
+Modelo de alerta para campos de preenchimento incorreto
+
+Campo Nome - fonte e caixa de texto em vermelho 
+<p>
+            <span style="color:#FF0000; font-weight:bold">Nome: </span>
+            <input autofocus style="border:2px solid #FF0000" type="text" name="cadas1['name']" maxlength="60">
+            
+</p>
+
+
+links onde achamos:
+
+
+http://www.pinceladasdaweb.com.br/blog/2009/03/17/efeito-hover-em-blocos-de-texto-com-css/
+
+http://codigofonte.uol.com.br/codigo/js-dhtml/formulario/mudar-cor-do-formulario-ao-clicar
+
+border:1px solid #008f36;
+
+

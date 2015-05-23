@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+	<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	</head>
+	
+
+<body>
+	<h2 align="center">
+		Página de Ajuda de depuração de Erros das funções validarcep, validaemail e validarcpf
+	</h2>
+	    
+	<form method="POST" action="testafuncoes.php">
+		Entre com CEP:&nbsp <input type="text" name="cep" size="9" maxlength="9">
+		<br>
+		
+		Entre com o CPF:&nbsp <input type="text" name="cpf" size="11" maxlength="11">
+		<br>
+		
+		Informe o e-mail:&nbsp <input type="text" name="email" size="30" maxlength="50">
+		<br>
+		
+		Entre com o Nome:&nbsp <input type="text" name="nome" size="40" maxlength="40">
+		<br>
+		
+		<select name="InstrucaoGrau" size="1">
+				<option  value="nselecionado"> Selecione uma opção:</option>
+				<option value="doutor"> Doutor</option>
+				<option value="mestre"> Mestre</option>
+				<option value="especialista"> Especialista</option>
+				<option value="bacharel"> Bacharel</option>
+				<option value="licenciado"> Licenciado</option>
+				<option value="outro"> Outro</option>
+			</select>
+		<br>
+		
+		Entre com a identidade :&nbsp <input type="text" name="identidade" size="40" maxlength="40">
+		<br>
+		
+		<p>
+		Interesse em bolsa ?
+		<input type="radio" name="InteresseBolsa" value="Sim">Sim &nbsp
+		<input type="radio" name="InteresseBolsa" value="Nao">Não
+		</p>
+		
+		<p>
+		Observaçoes
+		<br>
+		<textarea autofocus style="background:#EEE9E9" name="obs" rows ="15" cols ="80"></textarea>
+		</p>
+		
+		<p>
+			Entre como Número de Telefone:&nbsp <input type="text" name="numeros" size="40" maxlength="40">
+		</p>
+		
+		
+		<p>
+		<input type="submit" name="botaoteste" value="Enviar dados para teste">
+		<input type="reset" value="Limpar formulário">
+		</p>
+	</form>
+</body>
+</html>
+

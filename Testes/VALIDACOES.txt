@@ -1,0 +1,93 @@
+Validações feitas no  - cadastroinscricao1.php
+
+(ok) 'name' Caracteres [a-zA-Z] e acentuados // Campo de preenchimento obrigatório. (usar validanome.php)
+(ok) 'firstname' - Caracteres [a-zA-Z] e acentuados // Campo de preenchimento obrigatório. (usar validanome.php)
+(ok) 'DiaNascimento' - Campo de preenchimento obrigatório.
+(ok) 'MesNascimento' - Campo de preenchimento obrigatório.
+(ok) 'AnoNascimento' - Campo de preenchimento obrigatório.
+(ok) 'sexo' - Campo de preenchimento obrigatório.
+(ok) 'naturalidade' Caracteres [a-zA-Z] e acentuados // Campo de preenchimento obrigatório. (usar validanome.php)
+(ok) 'UFNaturalidade' Campo de preenchimento obrigatório.
+(ok) 'Nacionalidade' Caracteres [a-zA-Z] e acentuados // Campo de preenchimento obrigatório. (usar validanome.php)
+(ok) 'PaisNacionalidade' Caracteres [a-zA-Z] e acentuados // Campo de preenchimento obrigatório. (usar validanome.php)
+(ok) 'nome_pai' Caracteres [a-zA-Z] e acentuados // Campo de preenchimento obrigatório. (usar validanome.php)
+(ok) 'nome_mae' Caracteres [a-zA-Z] e acentuados // Campo de preenchimento obrigatório. (usar validanome.php)
+()   'adresse' Campo de preenchimento obrigatório 
+(ok) 'CPEndereco' Campo de preenchimento obrigatório. (usar validacep.php)
+()  'CityEndereco' Caracteres [a-zA-Z] e acentuados // Campo de preenchimento obrigatório. (usar validanome.php)
+()  'UFEndereco' Campo de preenchimento obrigatório.
+()  'country' Caracteres [a-zA-Z] e acentuados // Campo de preenchimento obrigatório. (usar validanome.php)
+
+*OBS verificar se existe pelo menos um telefone preenchido completamente
+()  'DDI_PhoneWork' Caracteres [0-9] Digítos:3  
+()  'DDD_PhoneWork' Caracteres [0-9] Digítos:2
+()  'PhoneWork' Caracteres [0-9] Digítos:8
+()  'DDI_PhoneHome' Caracteres [0-9] Digítos:3
+()  'DDD_PhoneHome' Caracteres [0-9] Digítos:2
+()  'PhoneHome' Caracteres [0-9] Digítos:8
+()  'DDI_cel' Caracteres [0-9] Digítos:3
+()  'DDD_cel' Caracteres [0-9] Digítos:2
+()  'TelCelular' Caracteres [0-9] Digítos:9
+
+(ok) 'mail1' campo de preenchimento obrigatório. (usar validaemail.php)
+(ok) 'mail2' Opcional  (usar validaemail.php)
+
+(ok) 'cpf' - usar validacpf.php
+(ok) 'identity' - usar validaidentidade.php
+() 'id_emissor' - usar validaidentidade.php
+() 'EstadoEmissaoId' - campo de preenchimento obrigatório
+() 'DiaEmissaoId' - campo de preenchimento obrigatório
+() 'MesEmissaoId' - campo de preenchimento obrigatório
+() 'AnoEmissaoId' - campo de preenchimento obrigatório
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+Validações feitas no  - cadastroinscricao2.php
+
+Grau acadêmico mais alto obtido:
+(ok)  'InstrucaoCurso' - caracteres [a-zA-Z:-] // Campo de preenchimento obrigatório. (usar validanome.php)
+(ok)  'InstrucaoGrau' - Campo de preenchimento obrigatório. 
+(ok)  'InstrucaoInstituicao'  - caracteres [a-zA-Z:-] // Campo de preenchimento obrigatório. (usar validanome.php)
+(ok)  'InstrucaoAnoConclusao' - Campo de preenchimento obrigatório.
+
+
+
+Experiência Profissional mais recente (se for o caso):
+**OBS: Os campos abaixo são opcionais. Mas uma vez que qualquer um tenha sido marcado
+	   devemos obrigar o preenchimento de todos outros.
+
+(ok) 'ExperienciaTipo1' Não precisa validar. 
+(ok) 'ExperienciaInstituicao' Caracteres [a-zA-Z:-]  (usar validanome.php) 
+(ok) 'ExperienciaPeriodoInicioSemestre>' Não precisa validar 
+(ok) 'ExperienciaPeriodoInicioAno' - Não precisa validar. 
+(ok) 'ExperienciaPeriodoFimSemestre>' - Não precisa validar. 
+(ok) 'ExperienciaPeriodoFimAno' - Não precisa validar.
+
+
+Programa Pretendido:
+**OBS: Se o candidato optar pelo mestrado, então verificar que cadas2['AreaDoutorado'] tem valor "nselecionado"
+(ok) 'CursoPos' - Campo de preenchimento obrigatório.
+(ok) 'AreaDoutorado' - Campo de preenchimento obrigatório.
+(ok) 'InteresseBolsa' - Campo de preenchimento obrigatório.
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+Validações feitas no - cadastroinscricao3.php
+
+
+(ok) 'NomeProfRecomendante1' - caracteres [a-zA-Z] e acentuados // Campo de preenchimento obrigatório. (usar validanome.php)
+(ok) 'EmailProfRecomendante1' - usar o script validaemail.php
+(ok) 'NomeProfRecomendante2' - caracteres [a-zA-Z] e acentuados // Campo de preenchimento obrigatório. (usar validanome.php) 
+(ok) 'EmailProfRecomendante2' usar o script validaemail.php 
+(ok) 'NomeProfRecomendante3' - caracteres [a-zA-Z] e acentuados // Campo de preenchimento obrigatório. (usar validanome.php)
+(ok) 'EmailProfRecomendante3' usar o script validaemail.php
+(ok) 'MotivacaoProgramaPretendido' - "Sanitizar" 
+
+
+
+
+

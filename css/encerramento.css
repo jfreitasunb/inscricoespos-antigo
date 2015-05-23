@@ -1,0 +1,39 @@
+body
+{
+  background-image: url('../imagens/bg_pixel.png');
+  padding: 20px;	
+}
+
+.background
+{
+  background-image: url('../imagens/fotocomlogoetexto.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  width: 50em;
+  margin-left: auto;
+  margin-right: auto;
+
+  color: white;
+  padding: 10px;
+  padding-top: 100px;
+  /* HACK */
+  padding-bottom: 300px;
+}
+
+form dl
+{
+}
+
+form dt
+{
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+form dd
+{
+  margin: 0px;
+}
+
+

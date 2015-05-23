@@ -1,0 +1,144 @@
+# create user pos with password 'inscricao_pos'; para cadastro pos
+
+
+
+create table inscricao_pos_recomendacoes(
+id_prof integer,
+id_aluno integer,
+Nivel varchar(9),
+Verao varchar(5),
+TempoConheceCandidato varchar(50),
+Circunstancia1 varchar(10),
+Circunstancia2 varchar(10),
+Circunstancia3 varchar(10),
+Circunstancia4 varchar(10),
+CircunstanciaOutra varchar(256),
+DesempenhoAcademico varchar(7),
+CapacidadeAprender varchar(7),
+CapacidadeTrabalhar varchar(7),
+Criatividade varchar(7),
+Curiosidade varchar(7),
+Esforco varchar(7),
+ExpressaoEscrita varchar(7),
+ExpressaoOral varchar(7),
+Relacionamento varchar(7),
+AntecedentesAcademicos text,
+PossivelAproveitamento text,
+InformacoesRelevantes text,
+ComoAluno varchar(7),
+ComoOrientando varchar(7),
+OutraSituacao varchar(7)
+);
+
+// Mudar
+create table inscricao_pos_contatos_recomendante(
+id_aluno integer,
+programa varchar(10), 
+recomendante_1 varchar(200),
+recomendante_2 varchar(200),
+recomendante_3 varchar(200)
+);
+
+
+create table inscricao_pos_login(
+coduser serial NOT NULL,
+login varchar(200),
+senha varchar(32),
+status varchar(12)
+);
+
+SELECT pg_catalog.setval(pg_catalog.pg_get_serial_sequence('inscricao_pos_login', 'coduser'), 1, true);
+
+create table inscricao_pos_dados_pessoais_recomendante(
+id_prof integer, 
+NomeRecomendante varchar(200),
+InstituicaoRecomendante varchar(500),
+TitulacaoRecomendante varchar(20),
+AreaRecomendante varchar(50),
+AnoObtencaoRecomendante integer,
+InstObtencaoRecomendante varchar(500),
+EnderecoRecomendante text
+);
+
+ ----------- novas 
+
+create table inscricao_pos_dados_candidato(
+id_aluno integer,
+name varchar(200),
+firstname varchar(200),
+DiaNascimento integer,
+MesNascimento integer,
+AnoNascimento integer,
+sexo varchar(9),
+naturalidade varchar(300),
+UFNaturalidade varchar(6),
+Nacionalidade varchar(200),
+PaisNacionalidade varchar(300),
+nome_pai varchar(500),
+nome_mae varchar(500),
+adresse varchar(500),
+CPEndereco varchar(10),
+CityEndereco varchar(200),
+UFEndereco varchar(6),
+country varchar(100),
+DDI_PhoneWork integer,
+DDD_PhoneWork integer,
+PhoneWork integer,
+DDI_PhoneHome integer,
+DDD_PhoneHome integer,
+PhoneHome integer,
+DDI_cel integer,
+DDD_cel integer,
+TelCelular integer,
+mail1 varchar(500),
+mail2 varchar(500),
+cpf varchar(11),
+identity varchar(20),
+id_emissor varchar(10),
+EstadoEmissaoId varchar(6),
+DiaEmissaoId integer,
+MesEmissaoId integer,
+AnoEmissaoId integer
+);
+
+
+create table inscricao_pos_dados_profissionais_candidato(
+id_aluno integer,
+InstrucaoCurso varchar(100),
+InstrucaoGrau varchar(20),
+InstrucaoInstituicao varchar(200),
+InstrucaoAnoConclusao integer,
+ExperienciaTipo1 varchar(8),
+ExperienciaTipo2 varchar(8),
+ExperienciaInstituicao varchar(200),
+ExperienciaPeriodoInicioSemestre varchar(15),
+ExperienciaPeriodoInicioAno varchar(15),
+ExperienciaPeriodoFimSemestre varchar(15),
+ExperienciaPeriodoFimAno varchar(15),
+CursoPos varchar(9),
+Verao varchar(3),
+PeriodoVerao varchar(6),
+AreaDoutorado varchar(22),
+InteresseBolsa varchar(3)
+);
+
+
+create table inscricao_pos_contatos_recomendante(
+id_aluno integer,
+Programa varchar(10),
+NomeProfRecomendante1 varchar(300),
+EmailProfRecomendante1 varchar(300),
+NomeProfRecomendante2 varchar(300),
+EmailProfRecomendante2 varchar(300),
+NomeProfRecomendante3 varchar(300),
+EmailProfRecomendante3 varchar(300)
+);
+
+
+
+create table inscricao_pos_carta_motivacao(
+id_aluno integer,
+Programa varchar(10),
+MotivacaoProgramaPretendido text
+);
+

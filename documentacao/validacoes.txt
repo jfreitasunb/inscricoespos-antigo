@@ -1,0 +1,68 @@
+Validações feitas no  - cadastroinscricao1.php
+
+
+( )  'name' - Caracteres [a-zA-Z] // Campo de preenchimento obrigatório.
+( )  'firstname' - Caracteres [a-zA-Z] // Campo de preenchimento obrigatório.
+( )  'DiaNascimento' - Campo de preenchimento obrigatório.
+( )  'MesNascimento' - Campo de preenchimento obrigatório.
+( )  'AnoNascimento' - Campo de preenchimento obrigatório.
+( )  'adresse' - Campo de preenchimento obrigatório. // "Sanitizar"
+( )  'cp' - verificar se o cep é brasileiro, caso seja, validar com script// de outros países: aceitar somente letras e numeros
+			// Campo de preenchimento obrigatório.
+( )  'city' - Caracteres [a-zA-Z]  // Campo de preenchimento obrigatório.
+( )  phone_homeDDI - // Campo de preenchimento obrigatório.
+( )  phone_homeDDD - campo númérico entre 2 e 3 dígitos. 
+( )  phone_home - se o ddi for brasileiro verificar se tem  entre 8 e 9 digitos.
+( )  phone_workDDI - Campo de preenchimento obrigatório.
+( )  phone_workDDD - campo númérico entre 2 e 3 dígitos. 
+( )  phone_work - se o ddi for brasileiro verificar se tem  entre 8 e 9 digitos.
+(ok) 'mail1' – usar o script validaemail.php
+(ok) 'mail2' – usar o script validaemail.php
+(ok) 'cpf' - usar o script validaCPF.php
+()  'identity' - Caracteres [0-9 a-z A-Z .-] // Campo de preenchimento obrigatório. // "Sanitizar"
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+Validações feitas no  - cadastroinscricao2.php
+
+Grau acadêmico mais alto obtido:
+()  'InstrucaoCurso' - caracteres [a-zA-Z:-] // Campo de preenchimento obrigatório. 
+()  'InstrucaoGrau' - Campo de preenchimento obrigatório. 
+()  'InstrucaoInstituicao'  - caracteres [a-zA-Z:-] // Campo de preenchimento obrigatório. 
+()  'InstrucaoAnoConclusao' - Campo de preenchimento obrigatório.
+
+
+
+Experiência Profissional mais recente (se for o caso):
+**OBS: Os campos abaixo são opcionais. Mas uma vez que qualquer um tenha sido marcado
+	   devemos obrigar o preenchimento de todos outros.
+
+() 'ExperienciaTipo1' Não precisa validar. 
+() 'ExperienciaInstituicao' caracteres [a-zA-Z:-]
+() 'ExperienciaPeriodoInicioSemestre>' Não precisa validar 
+() 'ExperienciaPeriodoInicioAno' - Não precisa validar. 
+() 'ExperienciaPeriodoFimSemestre>' - Não precisa validar. 
+() 'ExperienciaPeriodoFimAno' - Não precisa validar.
+
+
+Programa Pretendido:
+**OBS: Se o candidato optar pelo mestrado, então verificar que cadas2['AreaDoutorado'] tem valor "nselecionado"
+() 'CursoPos' - Campo de preenchimento obrigatório.
+() 'AreaDoutorado' - Campo de preenchimento obrigatório.
+() 'InteresseBolsa' - Campo de preenchimento obrigatório.
+
+
+--------------------------------------------------------------------------------------------------------------------------------
+
+Validações feitas no - cadastroinscricao3.php
+
+
+() 'NomeProfRecomendante1' tem o seguinte valor: Leandro Martins Cioletti 
+'EmailProfRecomendante1' tem o seguinte valor: leandro.mat@gmail.com 
+'NomeProfRecomendante2' tem o seguinte valor: Kelvia Guedes Pereira 
+'EmailProfRecomendante2' tem o seguinte valor: kekkelbsbs@gmail.com 
+'NomeProfRecomendante3' tem o seguinte valor: Dimas Jose Gonçalves 
+'EmailProfRecomendante3' tem o seguinte valor: dimasjog@gmail.com 
+'MotivacaoProgramaPretendido' tem o seguinte valor: Não sei o que quero fazer da vida. 
+
+

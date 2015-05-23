@@ -1,0 +1,1 @@
+pg_dump -h 172.16.1.103 -U pos si -t 'inscricao_pos_*' > pos.sql
