@@ -112,7 +112,7 @@
 		(Please give us your opinion about his/her academic, professional and/or technical background):
 		</span>
 	<br> 
-	<textarea style="background:#EEE9E9" name="formu2[antecedentesacademicos]" onkeyup="valida_caracteres(this)" onblur="valida_caracteres(this)" rows="7" cols="73" ><?php echo trim($repopc2["antecedentesacademicos"])?></textarea>
+	<textarea style="background:#EEE9E9" name="formu2[antecedentesacademicos]" rows="7" cols="73" ><?php echo trim($repopc2["antecedentesacademicos"])?></textarea>
 	</p>
 	
 	<p> <span style="<?php if (!isset($validaform2))  echo $marcarnormal; else if ($validaform2['possivelaproveitamento']==0){echo $marcarvermelho;}?>">
@@ -120,13 +120,13 @@
 		(Please give us your opinion about his/her potential performance, if accepted into the Program):
 		</span>
 	<br> 
-	<textarea style="background:#EEE9E9" name="formu2[possivelaproveitamento]" onkeyup="valida_caracteres(this)" onblur="valida_caracteres(this)" rows="7" cols="73" ><?php echo trim($repopc2["possivelaproveitamento"])?></textarea>
+	<textarea style="background:#EEE9E9" name="formu2[possivelaproveitamento]" rows="7" cols="73" ><?php echo trim($repopc2["possivelaproveitamento"])?></textarea>
 	</p>
 	
 	<p>
 		Outras informações relevantes (Other information you may consider relevant):
 	<br>
-	<textarea style="background:#EEE9E9" name="formu2[informacoesrelevantes]" onkeyup="valida_caracteres(this)" onblur="valida_caracteres(this)" rows="7" cols="73" ><?php echo trim($repopc2["informacoesrelevantes"])?></textarea>
+	<textarea style="background:#EEE9E9" name="formu2[informacoesrelevantes]" rows="7" cols="73" ><?php echo trim($repopc2["informacoesrelevantes"])?></textarea>
 	</p>
 	
 	
