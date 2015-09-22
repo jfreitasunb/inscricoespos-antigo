@@ -79,8 +79,7 @@ include_once("../config/config.php");
 						}else{
 							echo 'border:2px solid #FF0000';
 						} ?>"   
-						type="text" id="nome" name="cadas1[name]" value="<?php echo $repop[0];?>" onkeyup="valida_caracteres(this)" 
-            onblur="valida_caracteres(this)" maxlength="60">
+						type="text" id="nome" name="cadas1[name]" value="<?php echo $repop[0];?>" maxlength="60">
 						&nbsp; &nbsp; &nbsp;
 
 						<script type="text/javascript">
@@ -108,8 +107,7 @@ include_once("../config/config.php");
 								}else{
 									echo 'border:2px solid #FF0000';
 								} ?>"  
-								type="text" id="sobrenome" name="cadas1[firstname]" value="<?php echo $repop[1];?>" onkeyup="valida_caracteres(this)" 
-            onblur="valida_caracteres(this)" size="30" maxlength="60">
+								type="text" id="sobrenome" name="cadas1[firstname]" value="<?php echo $repop[1];?>" size="30" maxlength="60">
 							</p>
 
 
@@ -226,8 +224,7 @@ include_once("../config/config.php");
 				}else{
 					echo 'border:2px solid #FF0000';
 				} ?>" 
-				type=text id="naturalidade" name="cadas1[naturalidade]" value="<?php echo $repop[6];?>" onkeyup="valida_caracteres(this)" 
-            onblur="valida_caracteres(this)" maxlength=25>  
+				type=text id="naturalidade" name="cadas1[naturalidade]" value="<?php echo $repop[6];?>" maxlength=25>  
 				&nbsp &nbsp &nbsp
 
 				<script type="text/javascript">
@@ -302,8 +299,7 @@ include_once("../config/config.php");
 			}else{
 				echo 'border:2px solid #FF0000';
 			} ?>" 
-			type=text id="nacionalidade" name="cadas1[Nacionalidade]" value="<?php echo $repop[8];?>" onkeyup="valida_caracteres(this)" 
-            onblur="valida_caracteres(this)" maxlength=25>
+			type=text id="nacionalidade" name="cadas1[Nacionalidade]" value="<?php echo $repop[8];?>" maxlength=25>
 			&nbsp &nbsp &nbsp
 
 			<script type="text/javascript">
@@ -328,8 +324,7 @@ include_once("../config/config.php");
 			}else{
 				echo 'border:2px solid #FF0000';
 			} ?>"
-			type=text id="country" name="cadas1[PaisNacionalidade]" value="<?php echo $repop[9];?>" onkeyup="valida_caracteres(this)" 
-            onblur="valida_caracteres(this)" maxlength=50>
+			type=text id="country" name="cadas1[PaisNacionalidade]" value="<?php echo $repop[9];?>" maxlength=50>
 			<br>
 			<br>
 
@@ -353,8 +348,7 @@ include_once("../config/config.php");
 			}else{
 				echo 'border:2px solid #FF0000';
 			} ?>"
-			type=text id="nome_pai" name="cadas1[nome_pai]" value="<?php echo $repop[10];?>" onkeyup="valida_caracteres(this)" 
-            onblur="valida_caracteres(this)" maxlength=100 size=60>
+			type=text id="nome_pai" name="cadas1[nome_pai]" value="<?php echo $repop[10];?>" maxlength=100 size=60>
 			<br>
 			<br>
 
@@ -381,8 +375,7 @@ include_once("../config/config.php");
 			}else{
 				echo 'border:2px solid #FF0000';
 			} ?>"
-			type=text id="nome_mae" name="cadas1[nome_mae]" value="<?php echo $repop[11];?>" onkeyup="valida_caracteres(this)" 
-            onblur="valida_caracteres(this)" maxlength=100 size=60>
+			type=text id="nome_mae" name="cadas1[nome_mae]" value="<?php echo $repop[11];?>" maxlength=100 size=60>
 			<br>          
 			<br>
 
@@ -414,8 +407,7 @@ include_once("../config/config.php");
 						}else{
 							echo 'border:2px solid #FF0000';
 						} ?>"
-						type="text" id="endereco" name="cadas1[adresse]" value="<?php echo $repop[12];?>" onkeyup="valida_caracteres(this)" 
-            onblur="valida_caracteres(this)" size="61" maxlength="250">
+						type="text" id="endereco" name="cadas1[adresse]" value="<?php echo $repop[12];?>" size="61" maxlength="250">
 					</p>    
 
 					<script type="text/javascript">
@@ -462,8 +454,7 @@ include_once("../config/config.php");
 						}else{
 							echo 'border:2px solid #FF0000';
 						} ?>"
-						type="text" id="cidade" name="cadas1[CityEndereco]" value="<?php echo $repop[14];?>" onkeyup="valida_caracteres(this)" 
-            onblur="valida_caracteres(this)" maxlength="20">
+						type="text" id="cidade" name="cadas1[CityEndereco]" value="<?php echo $repop[14];?>" maxlength="20">
 						&nbsp; &nbsp; &nbsp;
 						<br> <font size="2" color="gray">exemplo XXXXX-YYY</font>
 						<br><br>
@@ -539,8 +530,7 @@ include_once("../config/config.php");
 				}else{
 					echo 'border:2px solid #FF0000';
 				} ?>"
-				type="text" id="country2" name="cadas1[country]" value="<?php echo $repop[16];?>" onkeyup="valida_caracteres(this)" 
-            onblur="valida_caracteres(this)" maxlength="20">
+				type="text" id="country2" name="cadas1[country]" value="<?php echo $repop[16];?>" maxlength="20">
 
 			</p>
 
@@ -827,8 +817,7 @@ include_once("../config/config.php");
 			echo'';
 		}else{
 			echo 'border:2px solid #FF0000';
-		} ?>" type=text id="emissor" name="cadas1[id_emissor]" value="<?php echo $repop[30];?>" onkeyup="valida_caracteres(this)" 
-            onblur="valida_caracteres(this)" maxlength=15>  
+		} ?>" type=text id="emissor" name="cadas1[id_emissor]" value="<?php echo $repop[30];?>" maxlength=15>  
 		&nbsp &nbsp
 
 		<script type="text/javascript">

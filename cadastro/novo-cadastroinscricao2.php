@@ -1,10 +1,10 @@
 <?php
 	session_start();
 	include_once("../config/config.php");
-	if( !isset($_SESSION['coduser']) ){
-		echo "<meta HTTP-EQUIV='Refresh' CONTENT='0;URL=../index.php'>";
-		exit;
-	}
+	// if( !isset($_SESSION['coduser']) ){
+	// 	echo "<meta HTTP-EQUIV='Refresh' CONTENT='0;URL=../index.php'>";
+	// 	exit;
+	// }
 ?>
 
 
