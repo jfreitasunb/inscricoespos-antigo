@@ -189,8 +189,7 @@
 				?>">
 				Curso (Matemática, Física, etc.):
 			</span>
-			<input autofocus type="text" id="graduacao" name="cadas2[InstrucaoCurso]" value="<?php echo $repop2["InstrucaoCurso"];?>" onkeyup="valida_caracteres(this)" 
-            onblur="valida_caracteres(this)" size="40" maxlength="60">
+			<input autofocus type="text" id="graduacao" name="cadas2[InstrucaoCurso]" value="<?php echo $repop2["InstrucaoCurso"];?>" size="40" maxlength="60">
 			<br>
 			
 			<script type="text/javascript">
