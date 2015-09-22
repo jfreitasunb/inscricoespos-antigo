@@ -81,7 +81,7 @@
 		Nome do recomendante (Recommender’s name):
 		</span>
 	<br> 
-	<input type="text" size="50" maxlength="256" value="<?php echo trim($repopc3["nomerecomendante"])?>" name="formu3[nomerecomendante]" onkeyup="valida_caracteres(this)">
+	<input type="text" size="50" maxlength="256" value="<?php echo trim($repopc3["nomerecomendante"])?>" name="formu3[nomerecomendante]" ">
 	</p>
 	
 	<p>
@@ -89,7 +89,7 @@
 	Instituição (Institution):
 	</span>
 	<br> 
-	<input type="text" size="70" maxlength="256" value="<?php echo trim($repopc3["instituicaorecomendante"])?>" name="formu3[instituicaorecomendante]" onkeyup="valida_caracteres(this)">
+	<input type="text" size="70" maxlength="256" value="<?php echo trim($repopc3["instituicaorecomendante"])?>" name="formu3[instituicaorecomendante]" ">
 	</p>
 	
 	<p>
@@ -114,7 +114,7 @@
 	Em que área (In which area):
 	</span>
 	<br>
-	<input type="text" size="70" maxlength="256" value="<?php echo trim($repopc3["arearecomendante"])?>" name="formu3[arearecomendante]" onkeyup="valida_caracteres(this)">
+	<input type="text" size="70" maxlength="256" value="<?php echo trim($repopc3["arearecomendante"])?>" name="formu3[arearecomendante]" ">
 	</p>
 	
 	<p>
@@ -140,7 +140,7 @@
 	Instituição de obtenção deste grau (Institution where it was obtained):
 	</span>
 	<br>
-	<input type="text" size="70" maxlength="256" value="<?php echo trim($repopc3["instobtencaorecomendante"])?>" name="formu3[instobtencaorecomendante]" onkeyup="valida_caracteres(this)">
+	<input type="text" size="70" maxlength="256" value="<?php echo trim($repopc3["instobtencaorecomendante"])?>" name="formu3[instobtencaorecomendante]" ">
 	</p>
 
 	
@@ -149,7 +149,7 @@
 	Endereço institucional do recomendante (Recommender’s institutional address):
 	</span>
 	<br> 
-	<textarea style="background:white" name="formu3[enderecorecomendante]" rows="3" cols="70" onkeyup="valida_caracteres(this)" ><?php echo trim($repopc3["enderecorecomendante"])?></textarea>
+	<textarea style="background:white" name="formu3[enderecorecomendante]" rows="3" cols="70" " ><?php echo trim($repopc3["enderecorecomendante"])?></textarea>
 	</p>
 
 <p align="center">
