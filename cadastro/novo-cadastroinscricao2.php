@@ -1,10 +1,10 @@
 <?php
 	session_start();
 	include_once("../config/config.php");
-	// if( !isset($_SESSION['coduser']) ){
-	// 	echo "<meta HTTP-EQUIV='Refresh' CONTENT='0;URL=../index.php'>";
-	// 	exit;
-	// }
+	if( !isset($_SESSION['coduser']) ){
+		echo "<meta HTTP-EQUIV='Refresh' CONTENT='0;URL=../index.php'>";
+		exit;
+	}
 ?>
 
 
@@ -259,7 +259,7 @@ Outro
 
 
 <input type="text" id="instituicao" name="cadas2[InstrucaoInstituicao]" value="<?php echo $repop2["InstrucaoInstituicao"];?>
-" onkeyup="valida_caracteres(this)" onblur="valida_caracteres(this)" size="70" maxlength="90">
+"  size="70" maxlength="90">
 <br>
 
 <script type="text/javascript">
@@ -315,7 +315,7 @@ instituicao.add(Validate.Presence, {
 
 Instituição: 
 <input type="text" name="cadas2[ExperienciaInstituicao]" value="<?php if ($repop2["ExperienciaInstituicao"]!="0"){echo $repop2["ExperienciaInstituicao"];}?>
-" onkeyup="valida_caracteres(this)" onblur="valida_caracteres(this)" size="70" maxlength="90">
+"  size="70" maxlength="90">
 
 
 
@@ -547,7 +547,7 @@ Teoria dos Números
 
 
 		<input type="text" id="nome_recomendante1" name="cadas3[NomeProfRecomendante1]" 
-		value="<?php echo trim($repop3["NomeProfRecomendante1"]);?>" onkeyup="valida_caracteres(this)" onblur="valida_caracteres(this)" size="50" maxlength="90">
+		value="<?php echo trim($repop3["NomeProfRecomendante1"]);?>"  size="50" maxlength="90">
 		&nbsp 
 
 		<script type="text/javascript">
@@ -594,7 +594,7 @@ Teoria dos Números
 				</span>
 
 				<input type="text" id="nome_recomendante2" name="cadas3[NomeProfRecomendante2]" 
-				value="<?php echo trim($repop3["NomeProfRecomendante2"]);?>" onkeyup="valida_caracteres(this)" onblur="valida_caracteres(this)" size="50" maxlength="90">
+				value="<?php echo trim($repop3["NomeProfRecomendante2"]);?>"  size="50" maxlength="90">
 				&nbsp
 
 				<script type="text/javascript">
@@ -639,7 +639,7 @@ Teoria dos Números
 						</span>
 
 						<input type="text" id="nome_recomendante3" name="cadas3[NomeProfRecomendante3]" 
-						value="<?php echo trim($repop3["NomeProfRecomendante3"])?>" onkeyup="valida_caracteres(this)" onblur="valida_caracteres(this)" size="50" maxlength="90">
+						value="<?php echo trim($repop3["NomeProfRecomendante3"])?>"  size="50" maxlength="90">
 						&nbsp 
 
 						<script type="text/javascript">
@@ -686,7 +686,7 @@ Teoria dos Números
 								</span>
 								<br>
 								<textarea style="background:#EEE9E9" id="justificativa" name="cadas3[MotivacaoProgramaPretendido]" 
-								onkeyup="valida_caracteres(this)" onblur="valida_caracteres(this)" rows="15" cols="80" ><?php echo $repop3["MotivacaoProgramaPretendido"];?></textarea>
+								 rows="15" cols="80" ><?php echo $repop3["MotivacaoProgramaPretendido"];?></textarea>
 							</p>
 
 							<script type="text/javascript">
