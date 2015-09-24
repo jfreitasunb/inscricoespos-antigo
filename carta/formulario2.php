@@ -14,7 +14,7 @@
 	<script type="text/javascript" src="../js/LiveValidation.js"></script>
 	<title> Carta de Recomendação </title>
 	</head>
-<body> 
+<body style="background-image: url('../imagens/bg_pixel.png'); padding: 20px"> 
 
 	<?php  
 	

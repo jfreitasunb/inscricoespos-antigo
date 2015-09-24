@@ -10,10 +10,11 @@
 <html>
 	<head>
 	<META http-equiv="Content-Type" content="text/html; charset=utf-8">
-		<script type="text/javascript" src="../js/remove_caracteres.js"></script>
+		<script type="text/javascript" src="../js/LiveValidation.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/common-stylesheet.css" />
 	<title> Carta de Recomendação </title>
 	</head>
-<body> 
+<body style="background-image: url('../imagens/bg_pixel.png'); padding: 20px"> 
 
 	<?php  
 	include_once "../pgsql/pgsql.php";
@@ -81,16 +82,29 @@
 		Nome do recomendante (Recommender’s name):
 		</span>
 	<br> 
-	<input type="text" size="50" maxlength="256" value="<?php echo trim($repopc3["nomerecomendante"])?>" name="formu3[nomerecomendante]" ">
+	<input type="text" size="50" id = "nomerecomendante" maxlength="256" value="<?php echo trim($repopc3["nomerecomendante"])?>" name="formu3[nomerecomendante]">
 	</p>
+
+	<script type="text/javascript">
+		var nomerecomendante = new LiveValidation('nomerecomendante');
+		nomerecomendante.add(Validate.Presence, {failureMessage: "Não pode ser vazio!"});
+		nomerecomendante.add( Validate.Exclusion, { within: [ '[' , ']', '(', ')', ';', '\\', '/', '-', '_', '!', '%', '#', '&', '*', '?', '{', '}' ], partialMatch: true } );
+	</script>
 	
 	<p>
-	<span style="<?php if (!isset($validaform3))  echo $marcarnormal; else if ($validaform3['instituicaorecomendante']==0){echo $marcarvermelho;}?>">
+	<span style="<?php if (!isset($validaform3))  echo $marcarnormal; else if ($validaform3["instituicaorecomendante"]==0){echo $marcarvermelho;}?>">
 	Instituição (Institution):
 	</span>
 	<br> 
-	<input type="text" size="70" maxlength="256" value="<?php echo trim($repopc3["instituicaorecomendante"])?>" name="formu3[instituicaorecomendante]" ">
+	<input type="text" id = "instituicaorecomendante" size="70" maxlength="256" value="<?php echo trim($repopc3["instituicaorecomendante"])?>" name="formu3[instituicaorecomendante]">
 	</p>
+
+
+	<script type="text/javascript">
+		var instituicaorecomendante = new LiveValidation('instituicaorecomendante');
+		instituicaorecomendante.add(Validate.Presence, {failureMessage: "Não pode ser vazio!"});
+		instituicaorecomendante.add( Validate.Exclusion, { within: [ '[' , ']', '(', ')', ';', '\\', '/', '-', '_', '!', '%', '#', '&', '*', '?', '{', '}' ], partialMatch: true } );
+	</script>
 	
 	<p>
 	<span style="<?php if (!isset($validaform3))  echo $marcarnormal; else if ($validaform3['titulacaorecomendante']==0){echo $marcarvermelho;}?>">
@@ -114,7 +128,7 @@
 	Em que área (In which area):
 	</span>
 	<br>
-	<input type="text" size="70" maxlength="256" value="<?php echo trim($repopc3["arearecomendante"])?>" name="formu3[arearecomendante]" ">
+	<input type="text" size="70" maxlength="256" value="<?php echo trim($repopc3["arearecomendante"])?>" name="formu3[arearecomendante]">
 	</p>
 	
 	<p>
@@ -140,8 +154,14 @@
 	Instituição de obtenção deste grau (Institution where it was obtained):
 	</span>
 	<br>
-	<input type="text" size="70" maxlength="256" value="<?php echo trim($repopc3["instobtencaorecomendante"])?>" name="formu3[instobtencaorecomendante]" ">
+	<input type="text" size="70" id = "instobtencaorecomendante" maxlength="256" value="<?php echo trim($repopc3["instobtencaorecomendante"])?>" name="formu3[instobtencaorecomendante]">
 	</p>
+
+	<script type="text/javascript">
+		var instobtencaorecomendante = new LiveValidation('instobtencaorecomendante');
+		instobtencaorecomendante.add(Validate.Presence, {failureMessage: "Não pode ser vazio!"});
+		instobtencaorecomendante.add( Validate.Exclusion, { within: [ '[' , ']', '(', ')', ';', '\\', '/', '-', '_', '!', '%', '#', '&', '*', '?', '{', '}' ], partialMatch: true } );
+	</script>
 
 	
 	<p>
@@ -149,8 +169,14 @@
 	Endereço institucional do recomendante (Recommender’s institutional address):
 	</span>
 	<br> 
-	<textarea style="background:white" name="formu3[enderecorecomendante]" rows="3" cols="70" " ><?php echo trim($repopc3["enderecorecomendante"])?></textarea>
+	<textarea style="background:white" id = "enderecorecomendante" name="formu3[enderecorecomendante]" rows="3" cols="70"><?php echo trim($repopc3["enderecorecomendante"])?></textarea>
 	</p>
+
+	<script type="text/javascript">
+		var enderecorecomendante = new LiveValidation('enderecorecomendante');
+		enderecorecomendante.add(Validate.Presence, {failureMessage: "Não pode ser vazio!"});
+		enderecorecomendante.add( Validate.Exclusion, { within: [ '[' , ']', '(', ')', ';', '\\', '/', '-', '_', '!', '%', '#', '&', '*', '?', '{', '}' ], partialMatch: true } );
+	</script>
 
 <p align="center">
 	<input type="hidden" name="OndeEstou" value="pag3">

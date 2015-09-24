@@ -17,9 +17,10 @@ unset($_SESSION['vindo_da2_para1']);
 <html>
 	<head>
 	<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/common-stylesheet.css" />
 	<title> Carta de Recomendação </title>
 	</head>
-<body>
+<body style="background-image: url('../imagens/bg_pixel.png'); padding: 20px">
 
 
 
