@@ -692,7 +692,7 @@ Teoria dos Números
 							<script type="text/javascript">
 							var justificativa = new LiveValidation('justificativa');
 							justificativa.add(Validate.Presence, {failureMessage: "Não pode ser vazio!"});
-							justificativa.add( Validate.Exclusion, { within: [ '[' , ']', '(', ')', ';', '\\', '/', '-', '_',  ], partialMatch: true } );
+							justificativa.add( Validate.Exclusion, { within: [ '[' , ']', '(', ')', ';', '\\', '/', '-', '_', '!', '%', '#', '&', '*', '?' ], partialMatch: true } );
 							</script>
 
 							<p>
