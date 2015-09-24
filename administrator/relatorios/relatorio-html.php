@@ -3,7 +3,6 @@
     <meta charset="utf-8">
     <title>Relatório de Inscritos</title>
 
-    <link rel="stylesheet" href="css/login.css" />
   </head>
   <body>
 
@@ -12,7 +11,7 @@
 include_once("../../pgsql/pgsql.php"); 
 include_once("../../config/config.php");
 
-$edital_atual="2-2014";
+//$edital_atual="1-2014";
 //$edital_anterior="2-2013";
 
 // Gerando a lista de codusers a partir da tabela finaliza
@@ -111,7 +110,7 @@ echo "Número de CPF: ".$cadas1['cpf'];
 echo"<br> Número de Identidade (ou Passaporte para estrangeiros): ".$cadas1['identity']."
 Orgão emissor: ".$cadas1['id_emissor'];
 echo "<br>";
-echo " Estado: ".$cadas1['estadoemissaoid']." Data de emissão:".$cadas1['diaemissaoid'].
+echo " Estado: ".$cadas1['estadoemissaoid']." Data de emissão: ".$cadas1['diaemissaoid'].
 "/".$cadas1['mesemissaoid']."/".$cadas1['anoemissaoid'];
 
 echo "<h4>Grau acadêmico mais alto obtido</h4>";
@@ -1045,22 +1044,6 @@ if ($registro[2]!=""){
 				}else{ echo "Faltam documentos obrigatórios.";}
 
 }
-
-// for ($i=0; $i < 1; $i++) { 
-// 	if ($registro[2]!=""){
-// 					$ext = pathinfo($registro[2], PATHINFO_EXTENSION);
-// 					if ($ext =="pdf"){
-// 						echo "<br> <a href='../../upload/$registro[2]'>$registro[2]</a>";
-// 					}
-		
-// 					else{ if ( ($ext=="jpeg") or ($ext=="jpg") or ($ext=="png") ){ 
-// 								 echo "<br> <a href='../../upload/$registro[2]'>$registro[2]</a>";
-// 							}
-// 					} 
-
-// 				}else{ echo "Faltam documentos obrigatórios.";}
-
-// }
 
 echo "<hr>";
 }
