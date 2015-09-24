@@ -10,7 +10,7 @@
 <html>
 	<head>
 	<META http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<script type="text/javascript" src="../js/remove_caracteres.js"></script>
+	<script type="text/javascript" src="../js/LiveValidation.js"></script>
 	<title> Carta de Recomendação </title>
 	</head>
 <body> 
@@ -112,23 +112,40 @@
 		(Please give us your opinion about his/her academic, professional and/or technical background):
 		</span>
 	<br> 
-	<textarea style="background:#EEE9E9" name="formu2[antecedentesacademicos]" rows="7" cols="73" ><?php echo trim($repopc2["antecedentesacademicos"])?></textarea>
+	<textarea style="background:#EEE9E9" id = "antecedentesacademicos" name="formu2[antecedentesacademicos]" rows="7" cols="73" ><?php echo trim($repopc2["antecedentesacademicos"])?></textarea>
 	</p>
+
+	<script type="text/javascript">
+		var antecedentesacademicos = new LiveValidation('antecedentesacademicos');
+		antecedentesacademicos.add(Validate.Presence, {failureMessage: "Não pode ser vazio!"});
+		antecedentesacademicos.add( Validate.Exclusion, { within: [ '[' , ']', '(', ')', ';', '\\', '/', '-', '_', '!', '%', '#', '&', '*', '?', '{', '}' ], partialMatch: true } );
+	</script>
 	
 	<p> <span style="<?php if (!isset($validaform2))  echo $marcarnormal; else if ($validaform2['possivelaproveitamento']==0){echo $marcarvermelho;}?>">
 		Dê-nos sua opinião sobre o possível desempenho do candidato, se aceito no programa <br>
 		(Please give us your opinion about his/her potential performance, if accepted into the Program):
 		</span>
 	<br> 
-	<textarea style="background:#EEE9E9" name="formu2[possivelaproveitamento]" rows="7" cols="73" ><?php echo trim($repopc2["possivelaproveitamento"])?></textarea>
+	<textarea style="background:#EEE9E9" id = "possivelaproveitamento" name="formu2[possivelaproveitamento]" rows="7" cols="73" ><?php echo trim($repopc2["possivelaproveitamento"])?></textarea>
 	</p>
+
+	<script type="text/javascript">
+		var possivelaproveitamento = new LiveValidation('possivelaproveitamento');
+		possivelaproveitamento.add(Validate.Presence, {failureMessage: "Não pode ser vazio!"});
+		possivelaproveitamento.add( Validate.Exclusion, { within: [ '[' , ']', '(', ')', ';', '\\', '/', '-', '_', '!', '%', '#', '&', '*', '?', '{', '}' ], partialMatch: true } );
+	</script>
 	
 	<p>
 		Outras informações relevantes (Other information you may consider relevant):
 	<br>
-	<textarea style="background:#EEE9E9" name="formu2[informacoesrelevantes]" rows="7" cols="73" ><?php echo trim($repopc2["informacoesrelevantes"])?></textarea>
+	<textarea style="background:#EEE9E9" id = "informacoesrelevantes" name="formu2[informacoesrelevantes]" rows="7" cols="73" ><?php echo trim($repopc2["informacoesrelevantes"])?></textarea>
 	</p>
 	
+	<script type="text/javascript">
+		var informacoesrelevantes = new LiveValidation('informacoesrelevantes');
+		informacoesrelevantes.add(Validate.Presence, {failureMessage: "Não pode ser vazio!"});
+		informacoesrelevantes.add( Validate.Exclusion, { within: [ '[' , ']', '(', ')', ';', '\\', '/', '-', '_', '!', '%', '#', '&', '*', '?', '{', '}' ], partialMatch: true } );
+	</script>
 	
 	
 	
