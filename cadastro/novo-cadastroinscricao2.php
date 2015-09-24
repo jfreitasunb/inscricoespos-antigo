@@ -17,7 +17,6 @@
 	</head>
 	
 	<script type="text/javascript" src="../js/LiveValidation.js"></script>
-	<script type="text/javascript" src="../js/remove_caracteres.js"></script>
 	
 	
 	<body style="background-image: url('../imagens/bg_pixel.png'); padding: 20px">
