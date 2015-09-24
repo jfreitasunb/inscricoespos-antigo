@@ -89,7 +89,7 @@ Naturalidade: ".$cadas1['naturalidade']."
 \\ \\ \\  Nacionalidade: ".$cadas1['nacionalidade']."
 \\ \\ \\ País: ".$cadas1['paisnacionalidade']."
 \\\\        
-Nome do pai : ".$cadas1['nome_pai']."
+Nome do pai: ".$cadas1['nome_pai']."
 \\ \\ \\ Nome da mãe: ".$cadas1['nome_mae']."          
 \\\\[0.2cm]                     
 \\textbf{Endereço Pessoal} 
