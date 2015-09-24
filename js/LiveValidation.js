@@ -693,7 +693,7 @@ var Validate = {
      */
     Email: function(value, paramsObj){
         var paramsObj = paramsObj || {};
-        var message = paramsObj.failureMessage || "O endereço de e-mail não é válido!";
+        var message = paramsObj.failureMessage || "O Endereço de e-mail não é válido!";
         Validate.Format(value, { failureMessage: message, pattern: /^([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})$/i } );
         return true;
     },
@@ -815,7 +815,7 @@ var Validate = {
      */
     Exclusion: function(value, paramsObj){
       var paramsObj = paramsObj || {};
-      paramsObj.failureMessage = paramsObj.failureMessage || "Must not be included in the list!";
+      paramsObj.failureMessage = paramsObj.failureMessage || "Evite o uso de caracteres como %, !, (, ), etc.";
       paramsObj.negate = true;
       Validate.Inclusion(value, paramsObj);
       return true;
