@@ -10,6 +10,7 @@
 <html>
 	<head>
 	<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="../css/common-stylesheet.css" />
 	<script type="text/javascript" src="../js/LiveValidation.js"></script>
 	<title> Carta de Recomendação </title>
 	</head>
