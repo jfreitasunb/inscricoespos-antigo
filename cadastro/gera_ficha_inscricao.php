@@ -44,8 +44,8 @@ $cadas1['ufnaturalidade'] = $ufnatura[1];
 $ufend = explode("_",$cadas1['ufendereco']);
 $cadas1['ufendereco'] = $ufend[1];
 
-$estaoemissao = explode("_",$cadas1['estadoemissaoid']);
-$cadas1['estadoemissaoid'] = $ufend[1];
+$estadoemissao = explode("_",$cadas1['estadoemissaoid']);
+$cadas1['estadoemissaoid'] = $estadoemissao[1];
 
 
 // Arrumando e-mails
