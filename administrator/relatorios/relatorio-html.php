@@ -58,7 +58,7 @@ $cadas1['ufnaturalidade'] = $ufnatura[1];
 $ufend = explode("_",$cadas1['ufendereco']);
 $cadas1['ufendereco'] = $ufend[1];
 
-$estaoemissao = explode("_",$cadas1['estadoemissaoid']);
+$estadoemissao = explode("_",$cadas1['estadoemissaoid']);
 $cadas1['estadoemissaoid'] = $ufend[1];
 
 // Coloca o nome em formato padrão - Título (primeira letra de cada string maíuscula)
@@ -110,7 +110,7 @@ echo "Número de CPF: ".$cadas1['cpf'];
 echo"<br> Número de Identidade (ou Passaporte para estrangeiros): ".$cadas1['identity']."
 Orgão emissor: ".$cadas1['id_emissor'];
 echo "<br>";
-echo " Estado: ".$cadas1['estadoemissaoid']." Data de emissão: ".$cadas1['diaemissaoid'].
+echo " Estado: ".$estadoemissaoid[1]." Data de emissão: ".$cadas1['diaemissaoid'].
 "/".$cadas1['mesemissaoid']."/".$cadas1['anoemissaoid'];
 
 echo "<h4>Grau acadêmico mais alto obtido</h4>";
