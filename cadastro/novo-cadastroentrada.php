@@ -935,7 +935,7 @@ include_once("../config/config.php");
 	} ?>"
 	name="cadas1[AnoEmissaoId]" size="1">
 	<?php
-	$ano=2012;
+	$ano=$ano_candidato;
 	echo '<option  value="nselecionado"> ------</option>';
 	do
 	{

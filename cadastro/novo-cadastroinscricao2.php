@@ -341,7 +341,7 @@ início:
 </select>
 <select name="cadas2[ExperienciaPeriodoInicioAno]" >
 	<?php
-	$ano=2014;
+	$ano=$ano_candidato;
 	echo '
 	<option  value="nselecionado">
 	ano 
@@ -376,7 +376,7 @@ fim:
 </select>
 <select name="cadas2[ExperienciaPeriodoFimAno]" >
 	<?php
-	$ano=2014;
+	$ano=$ano_candidato;
 	echo '
 	<option  value="nselecionado">
 	Ano 
