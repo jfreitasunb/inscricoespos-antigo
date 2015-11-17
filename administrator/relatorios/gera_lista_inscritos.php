@@ -22,12 +22,23 @@ for ($i=0;$i < $num_linhas;$i++){
     
   $query_cadas2 = pg_query("select * from inscricao_pos_dados_profissionais_candidato where id_aluno='".$coduser."' and edital='$edital_atual'");
   $cadas2 = pg_fetch_assoc($query_cadas2);
-print_r($programa);
+
+  $nome =$cadas1['name']." ".$cadas1['firstname'];
+  $nome = ucwords(strtolower($nome));
+  $nome =str_replace(' ','',$nome);
+
+  $cadas1['mail1'];
+
+  $dados_candidatos[0] = $nome;
+  $dados_candidatos[1] = $cadas1['mail1'];
+  $dados_candidatos[2] = $programa;
+
+print_r($dados_candidatos);
 die();
 
-header('Content-type: application/csv');
-header('Content-Disposition: attachment; filename='.$filename);
-fputcsv($fp, $header);
+//header('Content-type: application/csv');
+//header('Content-Disposition: attachment; filename='.$filename);
+//fputcsv($fp, $header);
 
 // $num_column = count($header);		
 // $query = "SELECT * FROM toy";
