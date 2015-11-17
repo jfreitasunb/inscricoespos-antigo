@@ -41,19 +41,7 @@ for ($i=0;$i < $num_linhas;$i++){
   $dados_candidatos[1] = $cadas1['mail1'];
   $dados_candidatos[2] = $programa;
 
-// print_r($dados_candidatos);
-// die();
-
-//header('Content-type: application/csv');
-//header('Content-Disposition: attachment; filename='.$filename);
-// fputcsv($fp, $header, ";");
-
-// $num_column = count($header);		
-// $query = "SELECT * FROM toy";
-// $result = mysql_query($query);
-// while($row = mysql_fetch_row($result)) {
-// 	fputcsv($fp, $row);
-// }
+ 	fputcsv($fp, $dados_candidatos, ";");
 }
 exit;
 ?>
