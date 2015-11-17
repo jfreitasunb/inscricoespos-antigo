@@ -6,6 +6,14 @@ include_once("../../config/config.php");
 $filename = "candidatos.csv";
 $fp = fopen('php://output', 'w');
 
+$header[0] = "Nome";
+$header[1] = "E-mail";
+$header[2] = "Programa";
+
+header('Content-type: application/csv');
+header('Content-Disposition: attachment; filename='.$filename);
+fputcsv($fp, $header, ";");
+
 $query_coduser_finaliza = pg_query("select coduser from inscricao_pos_finaliza where edital='$edital_atual' and coduser <> '110' and coduser <> '592' and coduser <> '210' and coduser <> '1264' and coduser <> '561' and coduser <> '618' and coduser <> '1434' and coduser <> '1435'");
 $tab_coduser = pg_fetch_all($query_coduser_finaliza);
 //var_dump($tab_coduser);
@@ -25,7 +33,7 @@ for ($i=0;$i < $num_linhas;$i++){
 
   $nome =$cadas1['name']." ".$cadas1['firstname'];
   $nome = ucwords(strtolower($nome));
-  $nome =str_replace(' ','',$nome);
+  //$nome =str_replace(' ','',$nome);
 
   $cadas1['mail1'];
 
@@ -33,12 +41,12 @@ for ($i=0;$i < $num_linhas;$i++){
   $dados_candidatos[1] = $cadas1['mail1'];
   $dados_candidatos[2] = $programa;
 
-print_r($dados_candidatos);
-die();
+// print_r($dados_candidatos);
+// die();
 
 //header('Content-type: application/csv');
 //header('Content-Disposition: attachment; filename='.$filename);
-//fputcsv($fp, $header);
+// fputcsv($fp, $header, ";");
 
 // $num_column = count($header);		
 // $query = "SELECT * FROM toy";
