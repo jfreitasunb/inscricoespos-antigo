@@ -10,6 +10,8 @@ $header[0] = "Nome";
 $header[1] = "E-mail";
 $header[2] = "Programa";
 
+header('Content-Encoding: UTF-8');
+header('Content-type: text/csv; charset=UTF-8');
 header('Content-type: application/csv');
 header('Content-Disposition: attachment; filename='.$filename);
 fputcsv($fp, $header, ";");
