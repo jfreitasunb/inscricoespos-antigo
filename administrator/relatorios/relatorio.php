@@ -116,7 +116,7 @@ $textotex .="
 \\begin{document}
 \\maketitle
 \\vspace*{-1.5cm}
-\\noindent Data de Nascimento:".$cadas1['dianascimento']."/".$cadas1['mesnascimento']."/".$cadas1['anonascimento']."
+\\noindent Data de Nascimento: ".$cadas1['dianascimento']."/".$cadas1['mesnascimento']."/".$cadas1['anonascimento']."
 \\ \\ \\ Idade: ".$idade."   \\ \\ \\ Sexo: ".$cadas1['sexo']."
 \\\\
 Naturalidade: ".$cadas1['naturalidade']."  
@@ -124,7 +124,7 @@ Naturalidade: ".$cadas1['naturalidade']."
 \\ \\ \\  Nacionalidade: ".$cadas1['nacionalidade']."
 \\ \\ \\ País: ".$cadas1['paisnacionalidade']."
 \\\\        
-Nome do pai : ".$cadas1['nome_pai']."
+Nome do pai: ".$cadas1['nome_pai']."
 \\ \\ \\ Nome da mãe: ".$cadas1['nome_mae']."          
 \\\\[0.2cm]                     
 \\textbf{Endereço Pessoal} 
@@ -136,27 +136,27 @@ Nome do pai : ".$cadas1['nome_pai']."
 \\ \\ \\ Estado: ".$cadas1['ufendereco']." 
 \\ \\ \\ País: ".$cadas1['country']."
 \\\\		
-		Telefone comercial : +".$cadas1['ddi_phonework']."(".$cadas1['ddd_phonework'].")".$cadas1['phonework']."
+		Telefone comercial: +".$cadas1['ddi_phonework']."(".$cadas1['ddd_phonework'].")".$cadas1['phonework']."
 \\ \\ \\ Telefone residencial: +".$cadas1['ddi_phonehome']."(".$cadas1['ddd_phonehome'].")".$cadas1['phonehome']."
-\\ \\ \\ Telefone celular : +".$cadas1['ddi_cel']."(".$cadas1['ddd_cel'].")".$cadas1['telcelular']."
+\\ \\ \\ Telefone celular: +".$cadas1['ddi_cel']."(".$cadas1['ddd_cel'].")".$cadas1['telcelular']."
 \\\\
 E-mail principal: ".$cadas1['mail1']."
 \\ \\ \\ E-mail alternativo: ".$cadas1['mail2']." 
 \\\\[0.2cm] 
 \\textbf{Documentos Pessoais}
 \\\\
-\\noindent Número de CPF : ".$cadas1['cpf']."
+\\noindent Número de CPF: ".$cadas1['cpf']."
 \\ \\ \\ Número de Identidade (ou Passaporte para estrangeiros): ".$cadas1['identity']."
 \\\\
 Orgão emissor: ".$cadas1['id_emissor']."
 \\ \\ \\ Estado: ".$cadas1['estadoemissaoid']."
-\\ \\ \\ Data de emissão :".$cadas1['diaemissaoid']."/".$cadas1['mesemissaoid']."/".$cadas1['anoemissaoid']."
+\\ \\ \\ Data de emissão:".$cadas1['diaemissaoid']."/".$cadas1['mesemissaoid']."/".$cadas1['anoemissaoid']."
 \\\\[0.3cm]
 \\textbf{Grau acadêmico mais alto obtido}
 \\\\	
-Curso:".$cadas2['instrucaocurso']."
-\\ \\ \\ Grau : ".$cadas2['instrucaograu']."
-\\ \\ \\ Instituição : ".$cadas2['instrucaoinstituicao']."
+Curso: ".$cadas2['instrucaocurso']."
+\\ \\ \\ Grau: ".$cadas2['instrucaograu']."
+\\ \\ \\ Instituição: ".$cadas2['instrucaoinstituicao']."
 \\\\			
 Ano de Conclusão ou Previsão: ".$cadas2['instrucaoanoconclusao']."
 \\\\ 
@@ -494,7 +494,7 @@ $textotex .= "
 	\\\\
 	Ano de obtenção deste grau: ".$formu3['anoobtencaorecomendante']."
 	\\ \\ 
-	Instituição de obtenção deste grau : ".$formu3['instobtencaorecomendante']."
+	Instituição de obtenção deste grau: ".$formu3['instobtencaorecomendante']."
 	\\\\ 
 	Endereço institucional do recomendante: \\\\ ".$formu3['enderecorecomendante'];
 
@@ -805,7 +805,7 @@ $textotex .= "
 	\\\\
 	Ano de obtenção deste grau: ".$formu3['anoobtencaorecomendante']."
 	\\ \\ 
-	Instituição de obtenção deste grau : ".$formu3['instobtencaorecomendante']."
+	Instituição de obtenção deste grau: ".$formu3['instobtencaorecomendante']."
 	\\\\ 
 	Endereço institucional do recomendante: \\\\ ".$formu3['enderecorecomendante'];
 
@@ -1107,7 +1107,7 @@ $textotex .= "
 	\\\\
 	Ano de obtenção deste grau: ".$formu3['anoobtencaorecomendante']."
 	\\ \\ 
-	Instituição de obtenção deste grau : ".$formu3['instobtencaorecomendante']."
+	Instituição de obtenção deste grau: ".$formu3['instobtencaorecomendante']."
 	\\\\ 
 	Endereço institucional do recomendante: \\\\ ".$formu3['enderecorecomendante'];
 
